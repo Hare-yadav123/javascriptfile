@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>str method</title>
+    <!-- string method 
+    .lenth 
+    slice()
+    toUpperCase
+    toLowerCase
+    trim 
+    true,false,return -->
+</head>
+<body>
+    <h1> slice method in javascript</h1>
+    <h3 id="id1"></h3>
+    <h2>conver string in toUpperCase</h2>
+    <h4 id="id2"></h4>
+   
+    <h2>Trim method </h2>
+    <h4 id="id3"></h4>
+
+    <h1>given padding in string</h1>
+    <h2 id="id4"></h2>
+    <script>
+        let sl='   where do you live';
+        let kl=sl.slice(0,20) 
+        let mn=sl.slice(0)
+        document.getElementById('id1').innerHTML=kl;
+        document.getElementById('id1').innerHTML=mn;
+
+        let up=sl.toUpperCase()
+        document.getElementById('id2').innerHTML=up;
+
+        let tr=sl.trimStart()
+        let ts=sl.trimStart()
+        document.getElementById('id3').innerHTML=tr.length+'without trim'+sl.length+'trim start'+ts;
+
+        let sg=' hi how are you 5'
+        let pd=sg.padEnd('0',5)
+        document.getElementById('id4').innerHTML=pd;
+    </script>
+
+
+</body>
+</html>

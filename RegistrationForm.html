@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(255, 0, 170);
+        }
+        .form{
+        
+            padding: 30px; 
+            justify-content: space-between; 
+            margin-left: 50%;
+            align-items: center;
+
+            
+        }
+        .demo{
+            padding: 20px;
+            margin: auto;
+            text-align: center;
+            margin-left: 75%;
+        }
+    </style>
+</head>
+<body>
+    <br><br><br><br><br><br><br><br>
+    <form action="" class="form"  id="form01">
+        <H3>This is a Registration Form</H3>
+        
+        <tr class="demo">
+            <td >First Name : </td>
+            <td><input type="text" placeholder="First Name" required></td> <br>
+        </tr>
+         
+        <br>
+        <tr class="demo">
+            <td>Last Name : </td>
+            <td><input type="text" placeholder="Last Name" required></td> <br>
+        </tr>
+        <br>
+        <tr class="demo">
+            <td>Email Id : </td>
+            <td><input type="Email" placeholder="Email Id"></td> <br>
+        </tr>
+        <br>
+        <tr>
+            <td>Password    :</td>
+            <input type="password" placeholder="password should be strong" required> <br>
+        </tr>
+        <br>
+        <tr class="demo">
+            <td>Conform Password</td>
+            <input type="password" placeholder="Conform password" required> <br>
+        </tr>
+        <br>
+        <tr class="demo">
+            <td>Gender</td>
+            <td>
+                <input type="radio" name="r1">Male 
+                <input type="radio" name="r2">Female
+            </td>
+        </tr> <br>
+        <br>
+        <tr class="demo">
+            <td colspan="2"><a href="login.html"  ><input type="button" id="button"  value="submit" onclick="stuform()"></a></td>
+        </tr>
+    </form>
+
+    <script>
+        function stuform(){
+            document.getElementById('form01').submit()
+        }
+    </script>
+</body>
+</html>

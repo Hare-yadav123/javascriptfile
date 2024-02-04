@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If elae part 2</title>
+</head>
+<body>
+    <script>
+        function age()
+        {
+            if(document.getElementById('id1').value>=18)
+            {
+                window.alert('u are eligible')
+               // document.getElementById('res').innerHTML='u are eligible'
+            }
+            else
+            {
+                window.alert('u are not eligible')
+                //document.getElementById('res').innerHTML='u are not eligible'
+            }
+        }
+
+    </script>
+    <h1>Enter your age: <input type="text" id="id1"></h1><br>
+    <button type="button" onclick="age()">enter</button>
+    <div id="res"></div>
+</body>
+</html>

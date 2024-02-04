@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> foor loop</title>
+</head>
+<body>
+    <h1>forloop in javascript</h1>
+    <div id="id1"></div>
+    <p id="id2"></p>
+    <script>
+       
+        let num=[11,12,13,14,19,17,18]
+        for(i=0;i<=num.length;i++){
+           console.log('This example is a for loop',num[i])
+           document.getElementById('id1').innerHTML=num;
+        }
+        
+
+    
+        //for eachloop
+        a=num.forEach((Element) =>{
+            console.log('This is a for loop example',Element+Element)
+            document.getElementById('id2').innerHTML=Element+Element
+        })
+        
+        //for OF loop
+        //use this loop we can print value of the keys
+        for(let i of num){
+            console.log('this is a for ofloop',i)
+            //document.getElementById('id3').innerHTML=i
+        }
+
+        //for in loop
+        for(let i in num){
+            console.log('This is for in loop',i)
+        }
+    </script>
+<h2 id="id3"></h2>
+</body>
+</html>

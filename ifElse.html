@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+        function recp(){
+            if (document.getElementById('t').value===document.getElementById('t2').value )
+            {
+                document.getElementById('res').innerHTML='both are equal'
+            }
+            else if(document.getElementById('t').value>=document.getElementById('t2').value ){
+                document.getElementById('res').innerHTML='first is great'
+            }
+            else if(document.getElementById('t').value<=document.getElementById('t2').value){
+                document.getElementById('res').innerHTML='b is great'
+            }
+            else{
+                document.getElementById('res').innerHTML='thanks'
+            }
+        }
+        
+    </script>
+    <>Enter your firts num: <input type="text" id="t" ></h1> <br>
+    <h1>Enter your second num: </h1> <input type="text" id="t2"></body></h1> <br>
+    <button type="button" onclick="recp()"> enter</button> <br>
+    <div id="res"></div>
+</body>
+</html>

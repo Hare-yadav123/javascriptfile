@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string in javascript</title>
+</head>
+<body>
+    <p>Normal string example</p>
+    <h1 id="demo"></h1>
+    <h2>string lenth</h2>
+    <h1 id="demo1"></h1>
+    <h1>insert single quotes inside string </h1>
+    <p id="demo2"></p>
+    <h1>insert backlash inside strine '\' </h1>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <script>
+        let sr='Heloo Raju ! How are you'
+        document.getElementById('demo').innerHTML=sr;
+        console.log(sr)
+
+        let len='ABCDEBGHIJKLMNOPQRSTUVWXYZ';
+        document.getElementById('demo1').innerHTML=len.length;
+        for(let i=0;i<=len.length;i++){
+            console.log(i)
+            document.getElementById('demo1').innerHTML=i;
+        }
+
+        let quo='hi haree whats\'up   ';
+        document.getElementById('demo2').innerHTML=quo;
+
+        let sls='what\'s going on \\bro   ';
+        document.getElementById('demo3').innerHTML=sls;
+
+        let fname='Haree'
+       let lname='yadav'
+       document.getElementById('demo4').innerHTML=fname+'kumar'+lname;
+    </script>
+</body>
+</html>

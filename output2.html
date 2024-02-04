@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>output</title>
+</head>
+<body>
+     <p class="output">  push on click button class will be changed </p> 
+     <div class="output">Ram</div>
+     <div class="output">shayam</div>
+     <div class="output">shanee</div>
+     <div class="output">sonu</div>
+     <div class="output">sridevi</div>
+     
+     <script>
+        function output() {
+          var out= document.getElementsByClassName('output');
+            for( i=0; i<=out.length; i++){
+               out[i].style.color='red'}
+               
+           
+        }
+        window.alert('welcome');
+        document.write('what about u')
+        console.log('hi ram')
+        window.print('')
+     </script>
+     <input type="button" onclick="output()" value="click">
+     <input type="button" onclick="print()" value="print">
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttom object</title>
+</head>
+<body style="background-color: #212121; color:#fff">
+    <form>
+        <button type="button" id="btn01" value="button" > HTML</button>
+        <button type="submit" id="btn02" name="Hree"  value="BN546"> buttom</button>
+    </form>
+
+    <p> after clicking on disabled button then Html button gone to disabled</p>
+    <button onclick="dishablefun()"> dishable</button>
+
+    <p id="jojo"></p><br>
+
+    <h2>Get button name</h2>
+    <button onclick="Name()" >Name</button>
+
+    <h2>get button content</h2>
+    <form  action="">
+        <button id="*0321"  name="old" type="submit" value="tata"> html</button>
+    </form>
+    <button onclick="get()">try it</button>
+    <p>there will show hidden button content</p>
+   <p id="popo"></p>
+    
+</body>
+<script>
+   function dishablefun(){
+    document.getElementById('btn01').disabled=true;
+   }
+   function Name(){
+    var x=document.getElementById('btn02').value;// name 
+    document.getElementById('jojo').innerHTML=x;
+   }
+
+
+function get(){
+ var h=document.getElementById('*0321').innerHTML;// name 
+ document.getElementById('popo').innerHTML=h;
+}
+
+</script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>You can't reassign a constant arry</p>
+    <p id="demo"></p>
+    <script>
+        //create an arry
+        try{const v=['ram','shayam','dadu','kaku'];
+            v=['mango','Gava','banana'];
+        //change array element
+        v[1]='Raju';
+        //Add an new element
+        v.push('Hree');
+        //dishplay the array
+    }
+        
+        catch (err) {
+            document.getElementById('demo').innerHTML=err;
+        }
+    </script>
+</body>
+</html>

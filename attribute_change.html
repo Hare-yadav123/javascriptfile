@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes</title>
+</head>
+<body>
+    <h2>This is a javascript file</h2>
+
+    <p id="mo"> Help of javascripy code we can change content of HTML .when  i will click on <b>Click</b> buttom content will be change by defult. </p>
+
+    <button onclick="document.getElementById('mo').innerText='Hello Raju ! How are you? This changing happen becouse of ' "> click here</button>
+
+    <h1 id="time" >show date and time</h1>
+    <button onclick="document.getElementById('time').innerHTML=Date() ">click for see time</button>
+
+    <h1>change attributesof src</h1>
+    <p>lets see how can chage javascrip <b>html </b> value of image src(source)</p>
+    <button type="button" onclick="document.getElementById('image').src='bulb1.jpg' ">on</button>
+
+    <img id="image" src="bulb.jpg" alt="" style="width: 100px;">
+
+    <button onclick="document.getElementById('image').src='bulb.jpg' ">Turn off light </button>
+
+    <h1>style or size change of content</h1>
+
+    <p id="fontsize">Style of HTML content can be change help of Javascript method</p>
+
+    <button onclick="document.getElementById('fontsize').style.fontSize='5em' ">click on</button>
+
+    <h1>hide html content</h1>
+    <p id="no">Help of  javascript code ,we can Hide <b>HTML content </b> lets see</p>
+    <button type="button" onclick="document.getElementById('no').style.display='none' ">click Here</button>
+
+    <h1>Show hidden content of html</h1>
+    
+    <p id="so" style="display:None ">Lets see how can see hideen content of html use of javascript</p>
+    <button type="button" onclick="document.getElementById('so').style.display='block' ">click me  </button>
+
+</body>
+</html>
